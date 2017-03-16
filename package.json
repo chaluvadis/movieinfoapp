@@ -1,0 +1,21 @@
+{
+  "name": "movieinfoapp",
+  "version": "1.0.0",
+  "description": "movie info app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaluvadis/movieinfoapp.git"
+  },
+  "keywords": [],
+  "author": "Surendra Chaluvadi <surendra.chaluvadi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaluvadis/movieinfoapp/issues"
+  },
+  "homepage": "https://github.com/chaluvadis/movieinfoapp#readme",
+  "dependencies": {}
+}
