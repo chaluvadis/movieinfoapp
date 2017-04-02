@@ -9,6 +9,11 @@ html, body {
     width: 100%;
 }
 
+img.movie-item:hover {
+    z-index: 100;
+    border: solid 5px #2a9fd6;
+}
+
 @media(min-width:960px){
     #movies col-md-3 .well{
         height: 390px;

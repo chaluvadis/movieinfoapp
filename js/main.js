@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    getMovieList('');
     $("#searchForm").on('submit', (e) => {
         let searchText = $("#searchText").val();
         getMovieList(searchText);
@@ -7,6 +8,9 @@ $(document).ready(() => {
 });
 
 function getMovieList(searchText) {
+    if(searchText === '') {
+        searchText = 'lord'
+    }
     axios.get('http://www.omdbapi.com?s=' + searchText)
         .then((response) => {
             let movies = response.data.Search;
@@ -15,8 +19,8 @@ function getMovieList(searchText) {
                 output += `
                     <div class="col-md-3">
                         <div class="well text-center">
-                            <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">
-                                <img src="${movie.Poster}">
+                            <a onclick="movieSelected('${movie.imdbID}')"  href="#">
+                                <img src="${movie.Poster}" class="movie-item">
                             </a>
                         </div>
                     </div>
