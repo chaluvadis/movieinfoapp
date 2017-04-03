@@ -8,6 +8,7 @@ $(document).ready(() => {
 });
 
 function getMovieList(searchText) {
+    //On load show the movies with Lord search text i like Lord Of the Ring Series
     if(searchText === '') {
         searchText = 'lord'
     }
