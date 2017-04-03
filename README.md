@@ -1,2 +1,2 @@
 # movieinfoapp
-movie info app
+This is a smiple movie search application uses open source movie api. 
